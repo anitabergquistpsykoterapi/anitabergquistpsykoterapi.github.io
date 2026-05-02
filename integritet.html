@@ -3,59 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Integritet | Anitas terapi</title>
-  <meta name="description" content="Integritetsinformation för Anitas terapi.">
+  <title>Integritet | Bergquist psykoterapi</title>
+  <meta name="description" content="Integritetsinformation för Bergquist psykoterapi.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="page-shell">
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Anitas terapi">
-        <span class="brand-mark">A</span>
+      <a class="brand" href="index.html" aria-label="Bergquist psykoterapi">
+        <span class="brand-mark">B</span>
         <span class="brand-text">
-          <span>Anitas terapi</span>
-          <small>Integritet och personuppgifter</small>
+          <span data-lang="sv">Bergquist psykoterapi</span>
+          <span data-lang="en">Bergquist psychotherapy</span>
+          <small data-lang="sv">Integritet och personuppgifter</small>
+          <small data-lang="en">Privacy and personal information</small>
         </span>
       </a>
+
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html" data-lang="sv">Startsida</a>
+          <a href="index.html" data-lang="en">Home</a>
+        </nav>
+
+        <div class="lang-switch" role="group" aria-label="Language selector">
+          <button class="lang-button is-active" type="button" data-set-lang="sv">SV</button>
+          <button class="lang-button" type="button" data-set-lang="en">EN</button>
+        </div>
+      </div>
     </header>
 
     <main>
       <section class="section-soft">
         <div class="section-heading">
-          <p class="section-kicker">Integritet</p>
-          <h1>Information om personuppgifter</h1>
+          <p class="section-kicker" data-lang="sv">Integritet</p>
+          <p class="section-kicker" data-lang="en">Privacy</p>
+          <h1 data-lang="sv">Information om hur personuppgifter hanteras</h1>
+          <h1 data-lang="en">Information about personal information</h1>
         </div>
 
         <div class="rich-copy">
           <p>
-            <a class="button button-secondary button-inline" href="index.html">Tillbaka till startsidan</a>
+            <a class="button button-secondary button-inline" href="index.html" data-lang="sv">Tillbaka till startsidan</a>
+            <a class="button button-secondary button-inline" href="index.html" data-lang="en">Back to home</a>
           </p>
-          <p>
-            Anitas terapi värnar om din integritet. Om du kontaktar verksamheten via telefon eller e-post behandlas dina uppgifter endast i den utsträckning som behövs för att besvara din förfrågan eller hantera bokning.
+          <p data-lang="sv">
+            Bergquist psykoterapi värnar om din integritet. Om du kontaktar verksamheten via telefon eller e-post behandlas dina uppgifter endast i den utsträckning som behövs för att besvara din förfrågan eller hantera en bokning.
           </p>
-          <p>
-            Skicka inte känsliga personuppgifter eller detaljer om ditt hälsotillstånd via vanlig e-post. För bokning och patientrelaterad hantering används CTNotes, som är ett system anpassat för psykoterapiverksamhet.
+          <p data-lang="en">
+            Bergquist psychotherapy values your privacy. If you contact the practice by phone or email, your personal information is processed only to the extent necessary to respond to your enquiry or manage a booking.
           </p>
-          <p>
-            Personuppgifter behandlas i enlighet med gällande dataskyddsregler och patientrelaterad dokumentation hanteras enligt de regler som gäller för legitimerad hälso- och sjukvårdspersonal i Sverige.
+          <p data-lang="sv">
+            Skicka inte känsliga personuppgifter eller detaljer om ditt hälsotillstånd via vanlig e-post. Bokning och övrig kontakt sker via e-post eller telefon.
           </p>
-          <p>
-            Om du har frågor om hur uppgifter hanteras är du välkommen att kontakta Anita Bergquist på <a href="mailto:anita@anitasterapi.se">anita@anitasterapi.se</a>.
+          <p data-lang="en">
+            Please do not send sensitive personal information or details about your health by regular email. Bookings and other contact are handled by email or phone.
           </p>
-          <p>
-            Organisationsnummer: 473737-6294
+          <p data-lang="sv">
+            Personuppgifter behandlas i enlighet med gällande dataskyddsregler, och patientrelaterad dokumentation hanteras enligt de regler som gäller för legitimerad hälso- och sjukvårdspersonal i Sverige.
+          </p>
+          <p data-lang="en">
+            Personal information is processed in accordance with applicable data protection rules, and patient-related documentation is handled in line with the regulations that apply to licensed healthcare professionals in Sweden.
+          </p>
+          <p data-lang="sv">
+            Om du har frågor om hur uppgifter hanteras är du välkommen att kontakta Anita Bergquist på <a href="mailto:anita.oh@hotmail.com">anita.oh@hotmail.com</a>.
+          </p>
+          <p data-lang="en">
+            If you have any questions about how information is handled, you are welcome to contact Anita Bergquist at <a href="mailto:anita.oh@hotmail.com">anita.oh@hotmail.com</a>.
           </p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p class="footer-line">
-        <strong>Anitas terapi</strong>
+      <p class="footer-line" data-lang="sv">
+        <strong>Bergquist psykoterapi</strong>
         <span>Anita Bergquist, legitimerad psykoterapeut</span>
         <a href="index.html">Startsida</a>
       </p>
+      <p class="footer-line" data-lang="en">
+        <strong>Bergquist psychotherapy</strong>
+        <span>Anita Bergquist, licensed psychotherapist</span>
+        <a href="index.html">Home</a>
+      </p>
     </footer>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
