@@ -72,6 +72,10 @@ html[data-ui-lang="en"] .footer-line[data-lang="en"] {
   display: flex !important;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .page-shell {
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
@@ -664,7 +668,6 @@ h3 {
   html[data-ui-lang="en"] .footer-line[data-lang="sv"] {
     display: none !important;
   }
-
 
   html[data-ui-lang="sv"] .footer-line[data-lang="sv"],
   html[data-ui-lang="en"] .footer-line[data-lang="en"] {
