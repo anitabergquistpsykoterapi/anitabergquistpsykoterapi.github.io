@@ -639,6 +639,8 @@ h3 {
     bottom: 8px;
     padding: 16px;
     border-radius: 28px;
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .hero-copy,
@@ -658,12 +660,8 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .site-footer {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .footer-line {
+  html[data-ui-lang="sv"] .footer-line[data-lang="sv"],
+  html[data-ui-lang="en"] .footer-line[data-lang="en"] {
     display: grid !important;
     grid-template-columns: minmax(0, 1fr) auto;
     gap: 6px 12px;
