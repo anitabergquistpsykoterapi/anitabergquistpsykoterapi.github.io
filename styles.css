@@ -660,6 +660,12 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  html[data-ui-lang="sv"] .footer-line[data-lang="en"],
+  html[data-ui-lang="en"] .footer-line[data-lang="sv"] {
+    display: none !important;
+  }
+
+
   html[data-ui-lang="sv"] .footer-line[data-lang="sv"],
   html[data-ui-lang="en"] .footer-line[data-lang="en"] {
     display: grid !important;
