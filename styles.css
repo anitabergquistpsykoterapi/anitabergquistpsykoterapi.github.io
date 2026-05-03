@@ -444,6 +444,14 @@ h3 {
   gap: 20px;
 }
 
+.contact-cta {
+  display: block;
+}
+
+.contact-cta .button {
+  width: 100%;
+}
+
 .site-footer {
   display: flex;
   align-items: center;
