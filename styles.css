@@ -79,7 +79,7 @@ html[data-ui-lang="en"] .footer-line[data-lang="en"] {
 .page-shell {
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 20px 0 120px;
+  padding: 0 0 120px;
 }
 
 .site-header,
@@ -190,7 +190,7 @@ html[data-ui-lang="en"] .footer-line[data-lang="en"] {
   grid-template-columns: 1fr;
   gap: 16px;
   align-items: start;
-  padding: 20px 0 12px;
+  padding: 0 0 12px;
   scroll-margin-top: 120px;
 }
 
@@ -204,6 +204,26 @@ html[data-ui-lang="en"] .footer-line[data-lang="en"] {
   background: var(--surface);
   backdrop-filter: blur(18px);
   box-shadow: var(--shadow);
+}
+
+.hero-image-wrap {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: calc(-1 * var(--header-offset) - 96px);
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  position: relative;
+  z-index: 0;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: clamp(190px, 28vw, 320px);
+  object-fit: cover;
+  object-position: center 42%;
 }
 
 .hero-copy {
@@ -452,6 +472,16 @@ h3 {
   width: 100%;
 }
 
+.contact-meta {
+  margin-top: 4px;
+}
+
+.contact-meta a {
+  color: var(--accent-deep);
+  font-weight: 600;
+  text-decoration: none;
+}
+
 .site-footer {
   display: flex;
   align-items: center;
@@ -612,6 +642,10 @@ h3 {
   .page-shell {
     width: min(100% - 20px, 1180px);
     padding-bottom: 140px;
+  }
+
+  .hero-image {
+    height: clamp(260px, 46vw, 380px);
   }
 
   .site-header {
