@@ -188,7 +188,7 @@ html[data-ui-lang="en"] .footer-line[data-lang="en"] {
 .hero {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 16px;
+  gap: 12px;
   align-items: start;
   padding: 0 0 12px;
   scroll-margin-top: 120px;
@@ -223,10 +223,12 @@ html[data-ui-lang="en"] .footer-line[data-lang="en"] {
   width: 100%;
   height: clamp(190px, 28vw, 320px);
   object-fit: cover;
-  object-position: center 42%;
+  object-position: center center;
 }
 
 .hero-copy {
+  width: 100%;
+  margin-inline: 0;
   padding: 28px;
   border-radius: var(--radius-lg);
 }
@@ -270,6 +272,12 @@ h3 {
   max-width: 58ch;
   color: var(--ink-soft);
   margin: 16px 0 0;
+}
+
+.lead-intro {
+  margin-top: 18px;
+  margin-bottom: -4px;
+  color: var(--ink);
 }
 
 .hero-actions {
@@ -373,7 +381,7 @@ h3 {
 }
 
 .section {
-  padding: 72px 0 0;
+  padding: 44px 0 0;
   scroll-margin-top: 120px;
 }
 
@@ -396,7 +404,7 @@ h3 {
 .section-heading {
   display: grid;
   gap: 10px;
-  margin-bottom: 28px;
+  margin-bottom: 22px;
 }
 
 .section-heading h2 + p,
@@ -413,20 +421,20 @@ h3 {
 .faq-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
+  gap: 18px;
 }
 
 .info-card,
 .step-card,
 .faq-item {
-  padding: 26px;
+  padding: 24px;
   border-radius: var(--radius-md);
 }
 
 .split-section {
   display: grid;
   grid-template-columns: 0.95fr 1.05fr;
-  gap: 32px;
+  gap: 24px;
   align-items: start;
 }
 
@@ -435,11 +443,7 @@ h3 {
 }
 
 .step-card span {
-  display: inline-block;
-  margin-bottom: 14px;
-  color: var(--accent);
-  font-size: 0.88rem;
-  letter-spacing: 0.12em;
+  display: none;
 }
 
 .faq-list {
@@ -606,19 +610,25 @@ h3 {
     padding-bottom: var(--footer-offset);
   }
 
-  .hero,
-  .section,
-  .contact-band {
-    min-height: calc(100vh - var(--header-offset) - var(--footer-offset) - 28px);
+  .hero {
+    min-height: calc(100vh - var(--header-offset) - var(--footer-offset) - 64px);
     scroll-snap-align: start;
     scroll-snap-stop: always;
-  }
-
-  .hero,
-  .section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .section,
+  .contact-band {
+    min-height: auto;
+    scroll-snap-align: start;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .section-soft,
@@ -633,8 +643,13 @@ h3 {
   }
 
   .section {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 4px;
+    padding-bottom: 8px;
+  }
+
+  .section + .section,
+  .section + .contact-band {
+    margin-top: 44px;
   }
 }
 
@@ -710,6 +725,7 @@ h3 {
   html[data-ui-lang="en"] .footer-line[data-lang="sv"] {
     display: none !important;
   }
+
 
   html[data-ui-lang="sv"] .footer-line[data-lang="sv"],
   html[data-ui-lang="en"] .footer-line[data-lang="en"] {
