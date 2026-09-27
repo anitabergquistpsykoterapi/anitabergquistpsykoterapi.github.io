@@ -91,14 +91,14 @@
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="mailto:info@anitabergquist.se?subject=Bokningsf%C3%B6rfr%C3%A5gan&amp;body=Namn:%0A%0ATelefonnummer:%0A%0A%C3%96nskad%20tid:%0A%0AStockholm%20eller%20online:%0A%0AMeddelande:" data-lang="sv">Boka via e-post</a>
-            <a class="button button-primary" href="mailto:info@anitabergquist.se?subject=Booking%20request&amp;body=Name:%0A%0APhone%20number:%0A%0APreferred%20time:%0A%0AStockholm%20or%20online:%0A%0AMessage:" data-lang="en">Book by email</a>
-            <a class="button button-secondary" href="#contact" data-lang="sv">Kontakt</a>
-            <a class="button button-secondary" href="#contact" data-lang="en">Contact</a>
+            <a class="button button-primary" href="#contact" data-lang="sv">Ansök om behandling</a>
+            <a class="button button-primary" href="#contact" data-lang="en">Apply for therapy</a>
+            <a class="button button-secondary" href="#contact" data-lang="sv">Andra frågor</a>
+            <a class="button button-secondary" href="#contact" data-lang="en">Other questions</a>
           </div>
 
-          <p class="hero-note" data-lang="sv">Du kan skicka bokningsförfrågan via e-post. Skicka inte känsliga personuppgifter via vanlig e-post.</p>
-          <p class="hero-note" data-lang="en">You can send a booking enquiry by email. Please do not send sensitive personal data by regular email.</p>
+          <p class="hero-note" data-lang="sv">Skicka din ansökan via CTNotes-formuläret längre ned på sidan.</p>
+          <p class="hero-note" data-lang="en">The CTNotes application form is currently in Swedish. You can contact me by email if you need help in English.</p>
 
           <ul class="trust-list">
             <li data-lang="sv">Mottagning i Stockholm</li>
@@ -164,10 +164,10 @@
 
         <div class="steps">
           <article class="step-card">
-            <h3 data-lang="sv">Boka tid</h3>
-            <h3 data-lang="en">Book a session</h3>
-            <p data-lang="sv">Bokning sker via e-post. Du är varmt välkommen att höra av dig för att få information om lediga tider och hur vi kan lägga upp arbetet utifrån dina behov.</p>
-            <p data-lang="en">Booking takes place by email. You are very welcome to get in touch for information about available times and how we can plan the work based on your needs.</p>
+            <h3 data-lang="sv">Ansök om behandling</h3>
+            <h3 data-lang="en">Apply for therapy</h3>
+            <p data-lang="sv">Skicka en ansökan via formuläret på kontaktsidan. Jag återkommer vanligtvis via e-post med information om nästa steg och möjliga tider.</p>
+            <p data-lang="en">Use the application form in the contact section. The form is currently in Swedish; if you need help in English, you are welcome to contact me by email.</p>
           </article>
 
           <article class="step-card">
@@ -215,18 +215,30 @@
         <div class="contact-copy">
           <p class="section-kicker" data-lang="sv">Kontakt</p>
           <p class="section-kicker" data-lang="en">Contact</p>
-          <h2 data-lang="sv">Välkommen att boka en tid eller höra av dig</h2>
-          <h2 data-lang="en">You are welcome to book a session or get in touch</h2>
+          <h2 data-lang="sv">Välkommen att ansöka om behandling eller höra av dig</h2>
+          <h2 data-lang="en">Welcome to apply for therapy or get in touch</h2>
 
           <p data-lang="sv">
-            Om du vill göra en direkt bokningsförfrågan kan du använda bokningsmöjligheten högre upp på sidan. Om du har frågor innan du vill boka är du välkommen att ta kontakt via telefon eller e-post.
+            Fyll i formuläret nedan om du vill ansöka om behandling. Jag återkommer vanligtvis via e-post med information om nästa steg och möjliga tider. Endast vid behov kontaktar jag dig per telefon.
           </p>
           <p data-lang="en">
-            If you would like to make a direct booking enquiry, you can use the booking option higher up on the page. If you have questions before booking, you are welcome to get in touch by phone or email.
+            To apply for therapy, please use the CTNotes form in the Swedish version of this page. I usually respond by email with information about the next step and possible appointment times, and will only contact you by phone if needed.
           </p>
+
+          <div class="application-card" data-lang="sv">
+            <div id="ctnotesform"></div>
+            <script src="https://www.ctnotes.com/js/ctnotes/ctnotes_external_form.js" id="ctnotestag" formid="DorgZH5pEyqZXJULyTfdB2yKR89qEyLn" css="1"></script>
+          </div>
+
+          <div class="application-card application-card-english" data-lang="en">
+            <h3>The application form is in Swedish</h3>
+            <p>The secure CTNotes application form is currently available in Swedish. If you need help applying in English, please <a href="mailto:info@anitabergquist.se?subject=Contact&amp;body=Name:%0A%0APhone%20number%20(if%20you%20prefer%20contact%20by%20phone):%0A%0AMessage:">contact me by email</a>. Please do not include sensitive personal information in regular email.</p>
+          </div>
         </div>
 
         <div class="contact-card">
+          <h3 data-lang="sv">Andra frågor</h3>
+          <h3 data-lang="en">Other questions</h3>
           <dl class="contact-list">
             <div>
               <dt data-lang="sv">Telefon</dt>
@@ -236,7 +248,8 @@
             <div>
               <dt data-lang="sv">E-post</dt>
               <dt data-lang="en">Email</dt>
-              <dd><a href="mailto:info@anitabergquist.se">info@anitabergquist.se</a></dd>
+              <dd data-lang="sv"><a href="mailto:info@anitabergquist.se?subject=Kontakt&amp;body=Namn:%0A%0ATelefonnummer%20(om%20du%20%C3%B6nskar%20kontakt%20via%20telefon):%0A%0AMeddelande:">info@anitabergquist.se</a></dd>
+              <dd data-lang="en"><a href="mailto:info@anitabergquist.se?subject=Contact&amp;body=Name:%0A%0APhone%20number%20(if%20you%20prefer%20contact%20by%20phone):%0A%0AMessage:">info@anitabergquist.se</a></dd>
             </div>
             <div>
               <dt data-lang="sv">Område</dt>
@@ -244,13 +257,9 @@
               <dd data-lang="sv">Stockholm</dd>
               <dd data-lang="en">Stockholm</dd>
             </div>
-            <div class="contact-cta">
-              <a class="button button-primary" href="mailto:info@anitabergquist.se?subject=Kontakt&amp;body=Namn:%0A%0ATelefonnummer%20(om%20du%20%C3%B6nskar%20kontakt%20via%20telefon):%0A%0AMeddelande:" data-lang="sv">Kontakt via e-post</a>
-              <a class="button button-primary" href="mailto:info@anitabergquist.se?subject=Contact&amp;body=Name:%0A%0APhone%20number%20(if%20you%20prefer%20contact%20by%20phone):%0A%0AMessage:" data-lang="en">Contact by email</a>
-            </div>
             <div class="contact-note">
-              <p data-lang="sv">När du kontaktar mig eller skickar en bokningsförfrågan via e-post behandlas dina kontaktuppgifter för att jag ska kunna besvara din förfrågan och hantera bokning. Skicka inte känsliga personuppgifter via vanlig e-post. Läs mer på sidan <a href="integritet.html">Integritet</a>.</p>
-              <p data-lang="en">When you contact me or send a booking enquiry by email, your contact details are processed so that I can respond to your enquiry and manage the booking. Please do not send sensitive personal data by regular email. Read more on the <a href="integritet.html">Privacy</a> page.</p>
+              <p data-lang="sv">Använd formuläret ovan för behandlingsrelaterade uppgifter. Formuläret hanteras via CTNotes. Skicka inte känsliga personuppgifter via vanlig e-post. Läs mer på sidan <a href="integritet.codex.html">Integritet</a>.</p>
+              <p data-lang="en">Use the application form for information relating to therapy. The form is handled through CTNotes. Please do not send sensitive personal data by regular email. Read more on the <a href="integritet.codex.html">Privacy</a> page.</p>
             </div>
           </dl>
         </div>

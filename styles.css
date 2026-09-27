@@ -199,6 +199,7 @@ html[data-ui-lang="en"] .footer-line[data-lang="en"] {
 .info-card,
 .step-card,
 .faq-item,
+.application-card,
 .contact-card {
   border: 1px solid var(--line);
   background: var(--surface);
@@ -482,7 +483,46 @@ h3 {
   background: transparent;
 }
 
+.contact-copy {
+  min-width: 0;
+}
+
+.application-card {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 24px;
+  padding: 28px;
+  border-radius: var(--radius-lg);
+}
+
+.application-card-english h3,
+.contact-card h3 {
+  margin-top: 0;
+}
+
+.application-card-english p {
+  margin-bottom: 0;
+}
+
+.application-card-english a {
+  color: var(--accent-deep);
+  font-weight: 600;
+}
+
+#ctnotesform,
+#ctnotesform .ctnotes,
+#ctnotesform form {
+  width: 100%;
+  max-width: 100%;
+}
+
+#ctnotesform > .ctnotes > .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 .contact-card {
+  align-self: start;
   padding: 28px;
   border-radius: var(--radius-lg);
 }
@@ -491,14 +531,6 @@ h3 {
   margin: 0;
   display: grid;
   gap: 20px;
-}
-
-.contact-cta {
-  display: block;
-}
-
-.contact-cta .button {
-  width: 100%;
 }
 
 .contact-note {
