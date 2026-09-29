@@ -509,6 +509,19 @@ h3 {
   font-weight: 600;
 }
 
+.form-privacy-note {
+  margin: 20px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.form-privacy-note a {
+  color: var(--accent-deep);
+  font-weight: 600;
+}
+
 #ctnotesform,
 #ctnotesform .ctnotes,
 #ctnotesform form {
@@ -556,6 +569,48 @@ h3 {
   color: var(--accent-deep);
   font-weight: 600;
   text-decoration: none;
+}
+
+.privacy-content {
+  display: grid;
+  gap: 24px;
+  max-width: 78ch;
+  font-size: 1.02rem;
+}
+
+.privacy-content > p {
+  margin: 0;
+}
+
+.privacy-section {
+  display: grid;
+  gap: 10px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.privacy-section h2,
+.privacy-section p {
+  margin: 0;
+}
+
+.privacy-section h2 {
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+}
+
+.privacy-section p,
+.privacy-updated {
+  color: var(--ink-soft);
+}
+
+.privacy-section a {
+  color: var(--accent-deep);
+  font-weight: 600;
+}
+
+.privacy-updated {
+  padding-top: 8px;
+  font-size: 0.9rem;
 }
 
 .site-footer {
@@ -789,6 +844,7 @@ h3 {
   .info-card,
   .step-card,
   .faq-item,
+  .application-card,
   .contact-card {
     padding: 22px;
   }
