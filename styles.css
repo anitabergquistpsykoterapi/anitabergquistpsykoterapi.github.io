@@ -221,11 +221,11 @@ html[data-ui-lang="en"] .footer-line[data-lang="en"] {
 
 .hero-image {
   display: block;
-  width: 105%;
+  width: 100%;
   max-width: none;
-  height: clamp(420px, 43vw, 900px);
+  height: clamp(480px, 45vw, 1000px);
   object-fit: cover;
-  object-position: left 22%;
+  object-position: left 40%;
 }
 
 .hero-copy {
@@ -848,8 +848,7 @@ h3 {
   }
 
   .hero-image {
-    width: 100%;
-    height: clamp(320px, 58vw, 500px);
+    height: 460px;
   }
 
   .site-header {
