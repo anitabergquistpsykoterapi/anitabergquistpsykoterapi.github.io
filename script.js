@@ -22,9 +22,16 @@ function applyLanguage(language) {
   });
 }
 
-const savedLanguage = window.localStorage.getItem(storageKey);
+const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
+const linkLanguage = ["sv", "en"].includes(requestedLanguage) ? requestedLanguage : null;
+const storedLanguage = window.localStorage.getItem(storageKey);
+const savedLanguage = ["sv", "en"].includes(storedLanguage) ? storedLanguage : null;
 const browserLanguage = navigator.language.toLowerCase().startsWith("sv") ? "sv" : "en";
-const activeLanguage = savedLanguage || browserLanguage || "sv";
+const activeLanguage = linkLanguage || savedLanguage || browserLanguage;
+
+if (linkLanguage) {
+  window.localStorage.setItem(storageKey, linkLanguage);
+}
 
 applyLanguage(activeLanguage);
 
@@ -33,6 +40,12 @@ buttons.forEach((button) => {
     const language = button.dataset.setLang;
     window.localStorage.setItem(storageKey, language);
     applyLanguage(language);
+
+    const url = new URL(window.location.href);
+    if (url.searchParams.has("lang")) {
+      url.searchParams.set("lang", language);
+      window.history.replaceState(window.history.state, "", url.href);
+    }
   });
 });
 
