@@ -114,18 +114,13 @@ html[data-ui-lang="en"] .footer-line[data-lang="en"] {
   text-decoration: none;
 }
 
-.brand-mark {
+.brand-logo {
+  display: block;
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(145deg, #f2dfb6, #dbc590);
-  border: 1px solid rgba(95, 77, 47, 0.14);
-  box-shadow: var(--shadow);
-  font-family: var(--sans);
-  font-size: 1.5rem;
-  font-weight: 600;
+  object-fit: cover;
+  flex: 0 0 auto;
 }
 
 .brand-text {
@@ -861,10 +856,9 @@ h3 {
     gap: 10px;
   }
 
-  .brand-mark {
+  .brand-logo {
     width: 40px;
     height: 40px;
-    font-size: 1.25rem;
   }
 
   .brand-text span {
